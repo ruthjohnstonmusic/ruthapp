@@ -1,7 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+MY name is Ruth and I'm a student web developer. I have no idea what this app is going to be!
 
 Things you may want to cover:
 
