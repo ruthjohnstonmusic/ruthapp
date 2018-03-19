@@ -4,8 +4,14 @@
 @font-face {
   font-family: 'Merriweather';
   src:url('/assets/Merriweather-Regular');
+}
+
+@font-face {
   font-family: 'Raleway';
   src:url('/assets/Raleway-Regular');
+}
+
+@font-face {
   font-family: 'ionicons';
   src: font-url('ionicons.eot') format('embedded-opentype'),
        font-url('ionicons.woff') format('woff'),
@@ -25,6 +31,7 @@ body {
   background: $cream;
   padding-top: 71px;
   padding-bottom: 71px;
+  margin: 0 auto;
 }
 
 h1, h2 {
@@ -43,19 +50,19 @@ h1, h2 {
 #main-nav {
   background: $dark-green;
   font-family: $font-header;
-  font-size: 120%;
   padding:10px 30px;
   a {
     color: $cream;
     text-decoration: none;
   	transition: color 0.2s;
+    font-size: 18px;
   }
   a:hover,
   a:active { color: $mid-green; }
 }
 
 #header-img {
-  width: 100vw;
+  width: 100%;
 }
 
 /* ------- SECTION ------- */
@@ -85,6 +92,7 @@ footer {
 
 .footer-nav {
 	list-style: none;
+  padding-top: 10px;
   li { font-size: 18px; }
   a {
     color: $cream;
@@ -92,10 +100,14 @@ footer {
   	transition: color 0.2s;
   }
   a:hover,
-  a:active { color: $mid-green; }
+  a:active {
+    color: $mid-green;
+    background-color:$dark-green;
+   }
 }
 
 .social-links {
+  padding-top: 10px;
 	list-style: none;
 	float: right;
   li {
@@ -117,6 +129,12 @@ footer {
 .ion-social-facebook,
 .ion-social-twitter,
 .ion-social-instagram { transition: color 0.2s; }
+
+.ion-social-facebook:hover,
+.ion-social-twitter:hover,
+.ion-social-instagram:hover {
+  background-color: $dark-green;
+}
 
 .ion-social-facebook:hover { color: #3b5998; }
 

@@ -1,3 +1,24 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$font-body: 'Merriweather', serif;
+$font-header: 'Raleway', sans-serif;
+$dark-green: #030;
+$cream: #fffef5;
+$mid-green: #29602b;
+$border-thick: 2px solid $dark-green;
+$border-thin: 1px solid $dark-green;
+
+#product_table {
+  border: $border-thick;
+  margin: auto;
+  th {
+    border-bottom: $border-thick;
+    border-left: $border-thin;
+    padding: 5px;
+  }
+  td {
+    border-left: $border-thin;
+  }
+}
