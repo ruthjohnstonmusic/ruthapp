@@ -1,59 +1,180 @@
+/* line 13, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/products.scss */
+#product_table {
+  padding: 10px;
+}
+
+/* line 17, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/products.scss */
+#product_table_inner {
+  border: 2px solid #030;
+  padding: 20px;
+}
+/* line 21, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/products.scss */
+#product_table_inner h1, #product_table_inner #product_description {
+  height: 130px;
+}
+/* line 24, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/products.scss */
+#product_table_inner #product_price {
+  margin-bottom: 10px;
+}
+/* line 1, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 59, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 66, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 76, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 82, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
 @font-face {
   font-family: 'Merriweather';
   src: url("/assets/Merriweather-Regular");
+}
+@font-face {
   font-family: 'Raleway';
   src: url("/assets/Raleway-Regular");
+}
+@font-face {
   font-family: 'ionicons';
   src: url(/assets/ionicons-a4803d7bdeb478a5b9238fe74d8aaa98dafe2e8e68fccbd0e3f4dced823f27f0.eot) format("embedded-opentype"), url(/assets/ionicons-709f2789daaff440820ebb975d3ae409af45121bdec47e39e83523490b1bc0fc.woff) format("woff"), url(/assets/ionicons-2ba7f20b1d8990e17a47fe3d88e4c766628aaa2baf1dd30fca0a0db59836f5f9.ttf) format("truetype"), url(/assets/ionicons-a627d9068c1235d9b3c95c405eb6ecb64a290b159cf5e926c0d96d89b24cd5fc.svg#Icomoon) format("svg");
 }
-/* line 22, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
+/* line 28, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
 body {
   font-family: "Merriweather", serif;
   color: #030;
   background: #fffef5;
   padding-top: 71px;
   padding-bottom: 71px;
+  margin: 0 auto;
 }
 
-/* line 30, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
+/* line 37, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
 h1, h2 {
   font-family: "Raleway", sans-serif;
   text-align: center;
 }
 
+/* line 42, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
+p {
+  font-family: "Merriweather", serif;
+}
+
 /* --------- LINKS --------- */
 /* --------- NAV --------- */
-/* line 43, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
+/* line 54, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
 #main-nav {
   background: #030;
   font-family: "Raleway", sans-serif;
-  font-size: 120%;
   padding: 10px 30px;
 }
-/* line 48, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
+/* line 58, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
 #main-nav a {
   color: #fffef5;
   text-decoration: none;
   transition: color 0.2s;
+  font-size: 18px;
 }
-/* line 53, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
+/* line 64, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
 #main-nav a:hover,
 #main-nav a:active {
   color: #29602b;
 }
 
-/* line 57, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
+/* line 68, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
 #header-img {
-  width: 100vw;
+  width: 100%;
 }
 
 /* ------- SECTION ------- */
-/* line 63, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
+/* line 74, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
 .section {
   padding-top: 71px;
 }
 
-/* line 67, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
+/* line 78, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
 .book_image {
   display: block;
   margin: 0 auto;
@@ -61,51 +182,58 @@ h1, h2 {
 }
 
 /* ------- FOOTER ------- */
-/* line 75, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
+/* line 86, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
 footer {
   background: #030;
   padding: 10px 30px;
   font-family: "Raleway", sans-serif;
 }
-/* line 79, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
+/* line 90, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
 footer p {
   font-size: 70%;
   color: #fffef5;
   margin-top: 10px;
 }
 
-/* line 86, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
+/* line 97, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
 .footer-nav {
   list-style: none;
+  padding-top: 10px;
 }
-/* line 88, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
+/* line 100, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
 .footer-nav li {
   font-size: 18px;
 }
-/* line 89, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
-.footer-nav li a:hover,
-.footer-nav li a:active {
+/* line 101, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
+.footer-nav a {
+  color: #fffef5;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+/* line 106, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
+.footer-nav a:hover,
+.footer-nav a:active {
   color: #29602b;
+  background-color: #030;
 }
 
-/* line 93, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
+/* line 113, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
 .social-links {
+  padding-top: 10px;
   list-style: none;
   float: right;
 }
-/* line 96, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
+/* line 117, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
 .social-links li {
   display: inline-block;
   margin-right: 20px;
   font-size: 150%;
 }
-/* line 101, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
+/* line 122, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
 .social-links li:last-child {
   margin-right: 30px;
 }
-/* line 102, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
-.social-links li a:link,
-.social-links li a:visited,
+/* line 123, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
 .social-links li a:link,
 .social-links li a:visited {
   color: #fffef5;
@@ -113,24 +241,31 @@ footer p {
   transition: color 0.2s;
 }
 
-/* line 114, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
+/* line 133, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
 .ion-social-facebook,
 .ion-social-twitter,
 .ion-social-instagram {
   transition: color 0.2s;
 }
 
-/* line 118, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
+/* line 137, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
+.ion-social-facebook:hover,
+.ion-social-twitter:hover,
+.ion-social-instagram:hover {
+  background-color: #030;
+}
+
+/* line 143, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
 .ion-social-facebook:hover {
   color: #3b5998;
 }
 
-/* line 120, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
+/* line 145, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
 .ion-social-twitter:hover {
   color: #55acee;
 }
 
-/* line 122, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
+/* line 147, /Users/Ruth/Desktop/ruthapp/app/assets/stylesheets/simple_pages.scss */
 .ion-social-instagram:hover {
   color: #125688;
 }
