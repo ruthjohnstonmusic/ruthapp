@@ -11,14 +11,17 @@ $border-thick: 2px solid $dark-green;
 $border-thin: 1px solid $dark-green;
 
 #product_table {
+  padding:10px;
+}
+
+#product_table_inner {
+
   border: $border-thick;
-  margin: auto;
-  th {
-    border-bottom: $border-thick;
-    border-left: $border-thin;
-    padding: 5px;
+  padding: 20px;
+  h1, #product_description {
+    height: 130px;
   }
-  td {
-    border-left: $border-thin;
+  #product_price {
+    margin-bottom: 10px;
   }
 }
