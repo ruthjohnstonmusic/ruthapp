@@ -20,6 +20,7 @@ $border-thin: 1px solid $dark-green;
   padding: 20px;
   h1, #product_description {
     height: 130px;
+    line-height: 1.2em;
   }
 
   .img-responsive {
@@ -31,13 +32,12 @@ $border-thin: 1px solid $dark-green;
     transition: background 0.5s, color 0.5s;
     &:hover,:active {
       background-color: $mid-green;
-
     }
     &:visited {
       color: $dark-green;
     }
   }
-  
+
   #product_price {
     margin-bottom: 10px;
   }
