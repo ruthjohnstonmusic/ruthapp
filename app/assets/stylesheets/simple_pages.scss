@@ -1,0 +1,147 @@
+// Place all the styles related to the simple_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@font-face {
+  font-family: 'Merriweather';
+  src:url('/assets/Merriweather-Regular');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src:url('/assets/Raleway-Regular');
+}
+
+@font-face {
+  font-family: 'ionicons';
+  src: font-url('ionicons.eot') format('embedded-opentype'),
+       font-url('ionicons.woff') format('woff'),
+       font-url('ionicons.ttf')  format('truetype'),
+       font-url('ionicons.svg#Icomoon') format('svg');
+}
+
+$font-body: 'Merriweather', serif;
+$font-header: 'Raleway', sans-serif;
+$dark-green: #030;
+$cream: #fffef5;
+$mid-green: #29602b;
+
+body {
+  font-family: $font-body;
+  color: $dark-green;
+  background: $cream;
+  padding-top: 71px;
+  padding-bottom: 71px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  font-family: $font-header;
+  text-align: center;
+}
+
+p {
+  font-family: $font-body;
+}
+
+/* --------- LINKS --------- */
+
+
+
+
+
+/* --------- NAV --------- */
+
+#main-nav {
+  background: $dark-green;
+  font-family: $font-header;
+  padding:10px 30px;
+  a {
+    color: $cream;
+    text-decoration: none;
+  	transition: color 0.2s;
+    font-size: 18px;
+  }
+  a:hover,
+  a:active { color: $mid-green; }
+}
+
+#header-img {
+  width: 100%;
+}
+
+/* ------- SECTION ------- */
+
+.section {
+  padding-top: 71px;
+}
+
+.book_image {
+  display: block;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+/* ------- FOOTER ------- */
+
+footer {
+	background: $dark-green;
+	padding:10px 30px;
+  font-family: $font-header;
+  p {
+  	font-size: 70%;
+    color: $cream;
+    margin-top: 10px;
+  }
+}
+
+.footer-nav {
+	list-style: none;
+  padding-top: 10px;
+  li { font-size: 18px; }
+  a {
+    color: $cream;
+    text-decoration: none;
+  	transition: color 0.2s;
+  }
+  a:hover,
+  a:active {
+    color: $mid-green;
+    background-color:$dark-green;
+   }
+}
+
+.social-links {
+  padding-top: 10px;
+	list-style: none;
+	float: right;
+  li {
+  	display: inline-block;
+  	margin-right: 20px;
+  	font-size: 150%;
+  }
+  li:last-child { margin-right: 30px; }
+  li a:link,
+  li a:visited {
+  	color: $cream;
+  	text-decoration: none;
+  	transition: color 0.2s;
+  }
+}
+
+
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-instagram { transition: color 0.2s; }
+
+.ion-social-facebook:hover,
+.ion-social-twitter:hover,
+.ion-social-instagram:hover {
+  background-color: $dark-green;
+}
+
+.ion-social-facebook:hover { color: #3b5998; }
+
+.ion-social-twitter:hover { color: #55acee; }
+
+.ion-social-instagram:hover { color: #125688; }
