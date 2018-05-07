@@ -1,7 +1,7 @@
 <div class="col-sm-6 col-md-4" id="product_table">
   <div id="product_table_inner">
     <%= image_tag(product.image_url, class: "img-responsive") %>
-    <a href="#"><h1><%= product.name %></h1></a>
+    <a href="#" id="product_name"><h1><%= link_to product.name, product %></h1></a>
     <p id="product_description"><%= product.description %></p>
     <strong id="product_price"><%= product.price %></strong>
     <p><%= link_to 'Show', product %></p>

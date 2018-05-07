@@ -26,7 +26,6 @@ ActiveRecord::Schema.define(version: 20180409115158) do
     t.string "image_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "area"
     t.decimal "price"
   end
 
