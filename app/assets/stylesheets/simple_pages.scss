@@ -69,6 +69,26 @@ p {
   width: 100%;
 }
 
+/* ------ SEARCH FORM ------ */
+
+.form-control {
+  display: inline;
+  background-color: $cream;
+  margin-top: 0.6em;
+  width: 90%;
+}
+
+.btn {
+  color: $dark-green;
+  background-color: $cream;
+  margin-top: 0.6em;
+  transition: background-color 0.2s, color 0.2s;
+  &:hover {
+    background-color: $mid-green;
+    color: $cream;
+  }
+}
+
 /* ------- SECTION ------- */
 
 .section {
