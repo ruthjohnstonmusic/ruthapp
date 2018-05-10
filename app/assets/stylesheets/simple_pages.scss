@@ -43,12 +43,6 @@ p {
   font-family: $font-body;
 }
 
-/* --------- LINKS --------- */
-
-
-
-
-
 /* --------- NAV --------- */
 
 #main-nav {
@@ -122,12 +116,11 @@ footer {
     color: $cream;
     text-decoration: none;
   	transition: color 0.2s;
+    &:hover, :active {
+      color: $mid-green;
+      background-color:$dark-green;
+    }
   }
-  a:hover,
-  a:active {
-    color: $mid-green;
-    background-color:$dark-green;
-   }
 }
 
 .social-links {
@@ -148,16 +141,12 @@ footer {
   }
 }
 
-
-
 .ion-social-facebook,
 .ion-social-twitter,
-.ion-social-instagram { transition: color 0.2s; }
-
-.ion-social-facebook:hover,
-.ion-social-twitter:hover,
-.ion-social-instagram:hover {
+.ion-social-instagram { transition: color 0.2s;
+&:hover {
   background-color: $dark-green;
+  }
 }
 
 .ion-social-facebook:hover { color: #3b5998; }
@@ -165,3 +154,21 @@ footer {
 .ion-social-twitter:hover { color: #55acee; }
 
 .ion-social-instagram:hover { color: #125688; }
+
+/* ----------------------------- */
+/* ------- CONTACT PAGE -------- */
+/* ----------------------------- */
+
+.contact-form {
+  margin: 0 auto;
+  width: 50%;
+}
+
+/* ----------------------------- */
+/* ------ THANK YOU PAGE ------- */
+/* ----------------------------- */
+
+.panel {
+  margin: 0 auto;
+  width: 70%;
+}

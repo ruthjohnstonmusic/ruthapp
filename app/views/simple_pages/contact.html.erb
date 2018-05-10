@@ -1,13 +1,35 @@
-<h1>Contact Us</h1>
 
-<h3>You can contact us as follows:</h3>
-<h4>Postal address</h4>
-<p>Laurel Cottage Ltd., 15 Ballyhay Road, Donaghadee, Co. Down, Northern Ireland, BT21 0NG.</p>
-<h4>Email address</h4>
-<p>info@cottage-publications.com</p>
-<h4>Telephone</h4>
-<p>
-  <em>From Northern Ireland:</em> 028 9188 8033<br>
-  <em>From Republic of Ireland:</em> 048 9188 8033<br>
-  <em>From Europe and beyond:</em> +4428 9188 8033
-</p>
+<div class="container-fluid contact-form">
+  <h1>Contact Us</h1>
+  <%= flash[:notice] %>
+
+  <%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
+  <div class="row">
+    <div class="form-group">
+      <%= form.label :name %>
+      <%= form.text_field :name, class: "form-control", placeholder: "Enter Name" %>
+    </div>
+    <div class="form-group">
+      <%= form.label :email %>
+      <%= form.text_field :email, class: "form-control", placeholder: "Enter Email" %>
+    </div>
+    <div class="form-group">
+      <%= form.label :message %>
+      <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5 %>
+    </div>
+  </div>
+  <%= form.submit "Send", class: "form_label" %>
+  <% end %>
+
+  <h3>Or you can contact us as follows:</h3>
+  <h4>Postal address</h4>
+  <p>Laurel Cottage Ltd<br>15 Ballyhay Road<br>Donaghadee<br>Co. Down<br>Northern Ireland<br>BT21 0NG</p>
+  <h4>Email address</h4>
+  <p>info@cottage-publications.com</p>
+  <h4>Telephone</h4>
+  <p>
+    <em>From Northern Ireland:</em> 028 9188 8033<br>
+    <em>From Republic of Ireland:</em> 048 9188 8033<br>
+    <em>From Europe and beyond:</em> +4428 9188 8033
+  </p>
+</div>
