@@ -54,9 +54,9 @@ p {
     text-decoration: none;
   	transition: color 0.2s;
     font-size: 18px;
+    &:hover, :active { color: $mid-green; }
   }
-  a:hover,
-  a:active { color: $mid-green; }
+
 }
 
 #header-img {
@@ -86,7 +86,7 @@ p {
 /* ------- SECTION ------- */
 
 .section {
-  padding-top: 71px;
+  padding: 30px 10px;
 }
 
 .book_image {

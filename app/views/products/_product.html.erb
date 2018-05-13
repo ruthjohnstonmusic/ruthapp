@@ -3,7 +3,7 @@
     <%= link_to image_tag(product.image_url, class: "img-responsive"), product %>
     <h1><%= link_to product.name, product %></h1>
     <p id="product_description"><%= product.description %></p>
-    <strong id="product_price"><%= product.price %></strong>
+    <strong id="product_price">£<%= product.price %></strong>
     <p><%= link_to 'Show', product %></p>
     <p><%= link_to 'Edit', edit_product_path(product) %></p>
     <p><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>

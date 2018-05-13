@@ -30,8 +30,9 @@ $border-thin: 1px solid $dark-green;
   a {
     border-radius: 2px;
     transition: background 0.5s, color 0.5s;
-    &:hover,:active {
+    &:hover, :active {
       background-color: $mid-green;
+      color: $cream;
     }
     &:visited {
       color: $dark-green;
@@ -60,7 +61,7 @@ $border-thin: 1px solid $dark-green;
 .actions input {
   border-radius: 2px;
   transition: background 0.5s, color 0.5s;
-  &:hover,:active {
+  &:hover, :active {
     background-color: $mid-green;
     color: $cream;
   }

@@ -1,7 +1,20 @@
-.carousel-inner {
-  .item {
-    img {
-      margin:  0 auto;
-    }
+$dark-green: #030;
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.carousel-inner .item img {
+  margin:  0 auto;
+}
+
+.carousel-indicators {
+  bottom: -30px;
+  .active {
+    background-color: $dark-green;
   }
+}
+
+.carousel-indicators li {
+border: 1px solid $dark-green;
 }
