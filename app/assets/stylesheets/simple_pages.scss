@@ -81,6 +81,11 @@ p {
     background-color: $mid-green;
     color: $cream;
   }
+  &:focus {
+    outline: none;
+    border: 3px solid $mid-green;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(41,96,43,.6);
+  }
 }
 
 /* ------- SECTION ------- */
