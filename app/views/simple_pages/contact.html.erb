@@ -18,7 +18,9 @@
       <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", required: true, rows: 5 %>
     </div>
   </div>
-  <%= form.submit "Send", class: "form_label" %>
+  <div class="actions">
+    <%= form.submit "Send" %>
+  </div>
   <% end %>
 
   <h3>Or you can contact us as follows:</h3>

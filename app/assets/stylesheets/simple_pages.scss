@@ -63,7 +63,7 @@ p {
   width: 100%;
 }
 
-/* ------ SEARCH FORM ------ */
+/* ------  FORMS ------ */
 
 .form-control {
   display: inline;
@@ -75,6 +75,7 @@ p {
 .btn {
   color: $dark-green;
   background-color: $cream;
+  border: 2px solid $mid-green;
   margin-top: 0.6em;
   transition: background-color 0.2s, color 0.2s;
   &:hover {
