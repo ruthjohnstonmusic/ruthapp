@@ -18,6 +18,8 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem 'font-ionicons-rails'
+# sprockets version
+gem 'sprockets', '~>3.7.2'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
