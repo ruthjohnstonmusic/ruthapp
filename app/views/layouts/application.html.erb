@@ -19,8 +19,6 @@
     <!--***********-->
     <!-- NAVBAR -->
     <!--***********-->
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
     <nav class="navbar navbar-inverse navbar-fixed-top" id="main-nav">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -68,7 +66,11 @@
         <%= image_tag("LC-header.jpg", id: "header-img") %>
       </div>
     </header>
-
+    <div class="container-fluid">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+    </div>
+    
     <!--***********-->
     <!-- SECTIONS --->
     <!--***********-->
