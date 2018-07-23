@@ -56,19 +56,10 @@ $border-thin: 1px solid $dark-green;
   margin: 0 auto;
   width: 50%;
 }
-// .product_form {
-//   margin: 0 auto;
-// }
-//
-// .field, .actions {
-//   text-align: center;
-// }
-//
-// .product_field {
-//   width: 250px;
-//   border-radius: 5px;
-// }
 
+.img-responsive {
+  margin: 0 auto;
+}
 .actions input {
   border-radius: 2px;
   transition: background 0.5s, color 0.5s;
@@ -80,5 +71,26 @@ $border-thin: 1px solid $dark-green;
     outline: none;
     border: 1px solid $mid-green;
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(41,96,43,.6);
+  }
+}
+
+.row a {
+  border-radius: 2px;
+  transition: background 0.5s, color 0.5s;
+  &:hover, :active {
+    background-color: $mid-green;
+    color: $cream;
+  }
+  &:focus {
+    outline: none;
+    border: 1px solid $mid-green;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(41,96,43,.6);
+  }
+}
+
+@media only screen and (max-width: 767px)  {
+  .product_info {
+    padding-top: 30px;
+    text-align: center;
   }
 }
