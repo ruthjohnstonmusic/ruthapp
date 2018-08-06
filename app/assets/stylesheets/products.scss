@@ -82,6 +82,26 @@ $border-thin: 1px solid $dark-green;
   }
 }
 
+// PAGINATION LINKS
+
+.pagination {
+  .previous_page {
+    margin-right: 10px;
+  }
+  .next_page {
+    margin-left: 10px;
+  }
+  .current {
+    color: orange;
+  }
+
+  .disabled {
+    color: grey;
+  }
+}
+
+// MEDIA QUERIES
+
 @media only screen and (max-width: 767px)  {
   .product_info {
     padding-top: 30px;
