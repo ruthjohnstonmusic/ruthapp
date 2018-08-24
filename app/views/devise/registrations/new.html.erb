@@ -5,18 +5,24 @@
     <%= devise_error_messages! %>
 
     <div class="field">
-      <%= f.email_field :email, class: "form-control", autofocus: true, autocomplete: "email", placeholder: "Your email address", required: true %>
+      <%= f.text_field :first_name, class: "form-control", autofocus: true, autocomplete: "First Name", placeholder: "Your First Name", required: true %>
+    </div>
+    <div class="field">
+      <%= f.text_field :last_name, class: "form-control", autofocus: true, autocomplete: "Last Name", placeholder: "Your Last Name", required: true %>
+    </div>
+    <div class="field">
+      <%= f.email_field :email, class: "form-control", autofocus: true, autocomplete: "email", placeholder: "Your Email Address", required: true %>
     </div>
 
     <div class="field">
       <% if @minimum_password_length %>
       <em>(<%= @minimum_password_length %> characters minimum)</em>
       <% end %><br />
-      <%= f.password_field :password, class: "form-control", autocomplete: "off", placeholder: "Your password", required: true %>
+      <%= f.password_field :password, class: "form-control", autocomplete: "off", placeholder: "Your Password", required: true %>
     </div>
 
     <div class="field">
-      <%= f.password_field :password_confirmation, class: "form-control", autocomplete: "off", placeholder: "Re-enter password", required: true %>
+      <%= f.password_field :password_confirmation, class: "form-control", autocomplete: "off", placeholder: "Re-enter Password", required: true %>
     </div>
 
     <div class="actions">
