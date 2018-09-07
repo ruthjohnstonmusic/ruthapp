@@ -36,6 +36,8 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -46,6 +48,8 @@ group :development, :test do
   gem 'sqlite3'
   # Use r-spec for TDD
   gem 'rspec-rails', '~> 3.7'
+  # Controller Testing Framework (Functional Tests)
+  gem 'rails-controller-testing'
 end
 
 group :development do
