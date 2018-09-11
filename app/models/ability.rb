@@ -8,6 +8,11 @@ class Ability
     else
       can :manage, Comment, user_id: user.id
       can :manage, User, id: user.id
+      cannot :destroy, Comment
+      cannot :create, Product
+      cannot :edit, Product
+      cannot :update, Product
+      cannot :destroy, Product
     end
   end
 end
