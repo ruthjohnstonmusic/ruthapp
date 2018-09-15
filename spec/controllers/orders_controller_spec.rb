@@ -1,10 +1,13 @@
 require 'rails_helper'
 
 describe OrdersController, type: :controller do
-  let(:user) { User.create!(email: "ruth@example.com", password: "password") }
+  before do
+    @user = FactoryBot.create(:user)
+  end
+
   context 'GET #index' do
     before(:each) do
-      sign_in user
+      sign_in @user
     end
 
     it "allows user to view" do
@@ -12,5 +15,5 @@ describe OrdersController, type: :controller do
       expect(response).to have_http_status(200)
     end
   end
-  
+
 end
