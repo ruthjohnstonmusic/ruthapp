@@ -9,6 +9,8 @@ Rails.application.routes.draw do
     resources :comments
   end
 
+  post 'payments/create'
+
   get 'simple_pages/about'
 
   get 'simple_pages/contact'

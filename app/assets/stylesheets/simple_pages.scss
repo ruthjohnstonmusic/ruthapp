@@ -53,13 +53,17 @@ p {
     text-decoration: none;
   	transition: color 0.2s;
     font-size: 18px;
-    &:hover, :active { color: $mid-green; }
+    &:hover, &:active { color: $mid-green; }
   }
 
 }
 
 #header-img {
   width: 100%;
+}
+
+#search-btn {
+  float: right;
 }
 
 /* ------  FORMS ------ */
@@ -120,7 +124,7 @@ footer {
     color: $cream;
     text-decoration: none;
   	transition: color 0.2s;
-    &:hover, :active {
+    &:hover, &:active {
       color: $mid-green;
       background-color:$dark-green;
     }
