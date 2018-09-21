@@ -12,13 +12,14 @@ class ProductsController < ApplicationController
       @products = Product.search(search_term)
     else
       @products = Product.all
+      logger.debug "My search found #{@products.count} products"
     end
   end
 
   # GET /products/1
   # GET /products/1.json
   def show
-    # @comments = @product.comments.order("created_at DESC")
+    byebug
     @comments = @product.comments.order("created_at DESC").page(params[:page]).per_page(3)
   end
 
