@@ -100,6 +100,20 @@ $border-thin: 1px solid $dark-green;
   }
 }
 
+// RATINGS
+
+.rated {
+  margin-bottom: 10px;
+}
+
+#ratings hr {
+    border: 0;
+    height: 1px;
+    width: 8%;
+    float: left;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 51, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
 // MEDIA QUERIES
 
 @media only screen and (max-width: 767px)  {
