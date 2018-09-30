@@ -1,6 +1,6 @@
 <div class="col-sm-6 col-md-4" id="product_table">
   <div id="product_table_inner">
-    <% logger.debug "Product: #{product.name}"%>
+    <!-- <% logger.debug "Product: #{product.name}"%> -->
     <% if product.image_url.present? %>
       <%= link_to image_tag(product.image_url, class: "img-responsive"), product %>
     <% end %>
@@ -13,4 +13,4 @@
       <p><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
     <% end %>
   </div>
-</div><!-- /col -->
+</div>
