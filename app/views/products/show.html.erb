@@ -1,38 +1,40 @@
 <div class="container-fluid">
-  <div class="row">
-    <h1><%= @product.name %></h1>
-  </div>
-  <div class="row">
-    <div class="col-sm-4">
-      <%= image_tag(@product.image_url, class: "img-zoom", data_zoom_image:"@product.image_url") %>
+  <% cache @product do %>
+    <div class="row">
+      <h1><%= @product.name %></h1>
     </div>
-    <div class="col-sm-8 product_info">
-      <p>
-        <strong>Description:</strong>
-        <%= @product.description %>
-      </p>
+    <div class="row">
+      <div class="col-sm-4">
+        <%= image_tag(@product.image_url, class: "img-zoom", data_zoom_image:"@product.image_url") %>
+      </div>
+      <div class="col-sm-8 product_info">
+        <p>
+          <strong>Description:</strong>
+          <%= @product.description %>
+        </p>
 
-      <p>
-        <strong>Image url:</strong>
-        <%= @product.image_url %>
-      </p>
+        <p>
+          <strong>Image url:</strong>
+          <%= @product.image_url %>
+        </p>
 
-      <p>
-        <strong>Price:</strong>
-        £<%= @product.price %>
-      </p>
+        <p>
+          <strong>Price:</strong>
+          £<%= @product.price %>
+        </p>
 
-      <p>
-        Average Rating: <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div>
-      </p>
+        <p>
+          Average Rating: <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div>
+        </p>
 
-      <div>
-        <%= form_with(url: '/payments/create') do |form| %>
-      <%= render partial: "shared/stripe_checkout_button" %>
-    <% end %>
+        <div>
+          <%= form_with(url: '/payments/create') do |form| %>
+        <%= render partial: "shared/stripe_checkout_button" %>
+      <% end %>
+        </div>
       </div>
     </div>
-  </div>
+  <% end %>
 
   <div class="row comments">
     <%= render 'new_comment' %>
