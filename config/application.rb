@@ -29,6 +29,9 @@ module Ruthapp
     config.generators.system_tests = nil
 
     config.assets.enabled = true
+    
     config.assets.paths << Rails.root.join('/app/assets/fonts')
+
+    config.cache_store = :redis_store, 'redis://localhost:6379/0/cache'
   end
 end
