@@ -9,6 +9,8 @@ Rails.application.routes.draw do
     resources :comments
   end
 
+  mount ActionCable.server => '/cable'
+
   post 'payments/create'
 
   get 'simple_pages/about'
