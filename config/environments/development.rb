@@ -15,12 +15,14 @@ Rails.application.configure do
   # dynamic links that show up inside emails from development environment generate the right URLs
   config.action_mailer.default_url_options = { host: 'localhost:3000' }
 
+    config.action_cable.url = "ws://localhost:3000/cable"
+
   # config.log_level
   config.log_level = :debug
 
   # Enable fragment cache logging
    config.action_controller.enable_fragment_cache_logging = true
-   
+
   # Enable/disable caching. By default caching is disabled.
   # if Rails.root.join('tmp/caching-dev.txt').exist?
     config.action_controller.perform_caching = true
