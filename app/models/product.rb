@@ -1,7 +1,7 @@
 class Product < ApplicationRecord
   validates :name, presence: true
-  has_many :orders
-  has_many :comments
+  has_many :orders, dependent: :destroy
+  has_many :comments, dependent: :destroy
 
   def self.search(search_term)
     if Rails.env.development?
