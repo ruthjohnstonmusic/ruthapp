@@ -16,4 +16,14 @@ class UserMailer < ApplicationMailer
     mail(to: user.email,
          subject: "Welcome to #{@appname}!")
   end
+
+# when order has been placed
+  def order_notification(user, order)
+    @appname = "Laurel Cottage Ltd"
+    @user_name = (user.first_name || "") + " " + (user.last_name || "")
+    if @user_name == " "
+      @user_name = user.email
+    end
+    mail(to: user.email, subject: "Your order at #{@appname}")
+  end
 end

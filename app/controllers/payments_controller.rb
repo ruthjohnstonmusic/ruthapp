@@ -22,6 +22,7 @@ class PaymentsController < ApplicationController
           :user_id => @user.id,
           :total => @product.price
         )
+        UserMailer.order_notification(@user, @order).deliver_now
       end
 
     rescue Stripe::CardError => e
