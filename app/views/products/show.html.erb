@@ -13,10 +13,10 @@
           <%= @product.description %>
         </p>
 
-        <p>
+        <!-- <p>
           <strong>Image url:</strong>
           <%= @product.image_url %>
-        </p>
+        </p> -->
 
         <p>
           <strong>Price:</strong>
@@ -28,9 +28,15 @@
         </p>
 
         <div>
-          <%= form_with(url: '/payments/create') do |form| %>
-        <%= render partial: "shared/stripe_checkout_button" %>
-      <% end %>
+          <% if user_signed_in? %>
+            <%= form_with(url: payments_create_path) do |form| %>
+              <%= hidden_field_tag(:product_id, @product.id) %>
+              <%= render partial: "shared/stripe_checkout_button", locals: {product: @product}%>
+            <% end %>
+          <% else %>
+            Please <%= link_to 'sign in', new_user_session_path, class: "edit-link" %>
+            or <%= link_to 'sign up', new_user_registration_path, class: "edit-link" %> to buy!
+          <% end %>
         </div>
       </div>
     </div>
